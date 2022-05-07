@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            margin:0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background-image:linear-gradient(to bottom right,#0a59f7,#c98bd5); 
+            width: 100%;
+            height: 801px;
+            
+        }
+        
+
+       #samrat{
+          border-radius: 10px;
+          position: absolute;
+          top: 50%; 
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background-color: white;
+          width: 400px;
+          padding: 30px;
+          box-sizing: border-box;
+          border:1px solid rgba(0,0,0,.1);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+           
+       }
+       
+       #samrat h1{
+           margin: 0px 120px 40px ; 
+       }
+
+       #samrat input{
+           padding: 10px 0px;
+           margin-bottom: 30px;
+       }
+
+       #samrat textarea{
+           height: 80px;
+           padding: 10px 0px;
+           margin-bottom: 40px;
+       }
+       #samrat input,#samrat textarea{
+           width: 100%;
+           box-sizing: border-box;
+           outline: none;
+           border: none;
+           border-bottom: 2px solid grey;
+       }
+       #samrat textarea{
+           margin-bottom: 20px;
+       }
+        
+       #samrat input[type="submit"]{
+           border-bottom: none;
+           cursor: pointer;
+           color: white;
+           background-image:linear-gradient(to bottom right,#0a59f7,#c98bd5);
+           margin-bottom: 0px;
+
+       }
+       #samrat form div{
+           position: relative;
+       }
+       #samrat form div label{
+          position: absolute; 
+          top: 10px;
+          left: 0px;
+          color:rgb(153, 153, 153);
+          transition: .5s;
+          pointer-events: none;
+       }
+       #samrat input:focus ~ label,#samrat textarea:focus~label,#samrat input:valid ~ label,#samrat textarea:valid ~ label{
+           top: -12px;
+       }
+       #sinha{
+           display: flex;
+           margin: 50px 100px 40px     
+       }
+       #sinha>p:nth-child(1){
+          color: rgb(158, 155, 155);
+          border: 1px solid rd;
+          padding-right: 5px;
+          font-size: 14px;
+       }
+       #sinha>p:nth-child(2){
+          color: #5083eb;
+          border: 1px solid rd;
+          padding-right: 0px;
+          font-size: 14px;
+       }
+       #sinha>p:nth-child(3){
+          color: rgb(158, 155, 155);
+          border: 1px solid rd;
+          font-size: 14px;
+       }
+       #sinha+div{
+           display: flex;
+           margin: -55px 55px 50px;
+
+       }
+       #sinha+div>p:nth-child(1){
+          color: rgb(158, 155, 155);
+          border: 1px solid rd;
+          padding-right: 5px;
+          font-size: 14px;
+       }
+       #sinha+div>p:nth-child(2){
+          color: #5083eb;
+          border: 1px solid rd;
+          padding-right: 0px;
+          font-size: 14px;
+       }
+      
+       </style>
+</head>
+<body>
+    <div id="samrat">
+        <h1>Login</h1>
+        <form>
+            <div>
+                <input type="email" name="" required="">
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>            
+            <input type="submit" name="" value="Login">
+        </form>
+        <div id="sinha">
+            <p>Forget </p>
+            <p>Password</p>
+            <p>?</p>
+        </div>
+        <div>
+            <p>Don,t have an account?</p>
+            <p>Sign up</p>
+        </div>
+    </div>
+    
+</body>
+</html>
